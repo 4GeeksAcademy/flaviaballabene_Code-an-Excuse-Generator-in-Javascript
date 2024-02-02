@@ -1,1 +1,29 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 300px;
+}
+
+p {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+#emoji {
+  display: flex;
+  font-size: 200px;
+  justify-content: end;
+  padding-left: 50px;
+  animation: rotateEmoji 2s linear infinite; /* Rotates the emoji */
+  transform-origin: center center;
+  animation: rotateEmoji 2s linear 1;
+}
+
+@keyframes rotateEmoji {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
